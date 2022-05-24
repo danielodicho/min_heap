@@ -1,0 +1,28 @@
+Heap.java:10: error: generic array creation
+     this.listx =  new Comparable[initCapacity];
+                   ^
+Heap.java:36: error: generic array creation
+        Comparable[] list1 =  new Comparable[this.listx.length*2];
+                              ^
+Heap.java:47: error: cannot find symbol
+    while (d.compareTo(listx[temp])< 0){ // 3<1
+            ^
+  symbol:   method compareTo(Comparable)
+  location: variable d of type Comparable
+  where Comparable is a type-variable:
+    Comparable extends Object declared in class Heap
+Heap.java:98: error: cannot find symbol
+        if (a.compareTo(b) <= 0){
+             ^
+  symbol:   method compareTo(Comparable)
+  location: variable a of type Comparable
+  where Comparable is a type-variable:
+    Comparable extends Object declared in class Heap
+Heap.java:107: error: cannot find symbol
+      if (listx[nIndex].compareTo(listx[mIndex]) >0){
+                       ^
+  symbol:   method compareTo(Comparable)
+  location: class Object
+  where Comparable is a type-variable:
+    Comparable extends Object declared in class Heap
+5 errors
